@@ -27,6 +27,92 @@ body{
     padding: 7px 15px;
 }
 
-.sidebar.content.logo{
-    
+.sidebar .content .logo{
+    color : #fff;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    align-items: center;
 }
+
+.content .logo i{
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+.content .logo .logo-name{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.sidebar #btn{
+    color: #fff;
+    position: absolute;
+    left: 90%;
+    top: 7px;
+    font-size: 30px;
+    height: 55px;
+    text-align: center;
+    width: 55px;
+    line-height: 55px;
+    transform: translateX(-55%);
+}
+
+.sidebar ul{
+    margin-top: 20px;
+}
+
+.sidebar ul li{
+    list-style: none;
+    height: 52px;
+    width: 100%;
+    margin: 0 6px;
+    position: relative;
+    line-height: 52px;
+    border-radius: 10px;
+}
+
+.sidebar ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    padding-left: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+.sidebar ul li .bx-search-alt{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background: #fff;
+}
+
+
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
