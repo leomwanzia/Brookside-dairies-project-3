@@ -22,7 +22,7 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    width: 240px;
+    width: 78px;
     background: #11101d;
     padding: 7px 15px;
     transition: all 0.5s ease;
@@ -40,10 +40,13 @@ body{
     height: 70px;
     width: 100%;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
     }
     
-.sidebar .active .content .logo{
+.sidebar.active .content .logo{
     opacity: 1;
+    pointer-events: none;
     }
     
     .content .logo i{
@@ -59,7 +62,7 @@ body{
     .sidebar #btn{
     color: #fff;
     position: absolute;
-    left: 90%;
+    left: 50%;
     top: 7px;
     font-size: 30px;
     height: 55px;
@@ -67,6 +70,10 @@ body{
     width: 55px;
     line-height: 55px;
     transform: translateX(-55%);
+    }
+
+    .sidebar.active #btn{
+        left: 90%;
     }
     
     .sidebar ul{
@@ -127,6 +134,12 @@ body{
     color: #fff;
     font-size: 22px;
     }
+
+    .sidebar ul li .bx-search-alt:hover{
+        background: #fff;
+        color:  #1d1b31;
+    }
+
     
     .sidebar ul li a{
     color: #fff;
