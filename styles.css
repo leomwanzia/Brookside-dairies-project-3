@@ -204,7 +204,7 @@ body{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
-    padding-left: 100px;
+    padding-left: 300px;
 }
 
 .graphBox .Box{
