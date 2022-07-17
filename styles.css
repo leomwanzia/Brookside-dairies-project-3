@@ -16,6 +16,14 @@ body{
     width: 100%;
     overflow: hidden;
 }
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+
+}
 
 .sidebar{
     position: fixed;
@@ -25,7 +33,9 @@ body{
     width: 240px;
     background: #11101d;
     padding: 7px 15px;
-}
+    transition: all 0.5s ease;
+    }
+
 
 .sidebar .content .logo{
     color : #fff;
@@ -33,18 +43,22 @@ body{
     height: 70px;
     width: 100%;
     align-items: center;
-}
-
+    }
+    
+.sidebar .active .content .logo{
+    opacity: 1;
+    }
+    
 .content .logo i{
     font-size: 30px;
     margin-right: 6px;
-}
-
+    }
+    
 .content .logo .logo-name{
     font-size: 25px;
     font-weight: 500;
-}
-
+    }
+    
 .sidebar #btn{
     color: #fff;
     position: absolute;
@@ -56,12 +70,12 @@ body{
     width: 55px;
     line-height: 55px;
     transform: translateX(-55%);
-}
-
+    }
+    
 .sidebar ul{
     margin-top: 20px;
-}
-
+    }
+    
 .sidebar ul li{
     list-style: none;
     height: 52px;
@@ -70,8 +84,32 @@ body{
     position: relative;
     line-height: 52px;
     border-radius: 10px;
-}
-
+    }
+    
+.sidebar ul li .tool{
+    position: absolute;
+    left: 122px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    }
+    
+    sidebar ul li:hover .tool{
+    transition: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
+    
+    }
+    
 .sidebar ul li input{
     position: absolute;
     height: 100%;
@@ -85,14 +123,14 @@ body{
     padding-left: 50px;
     font-size: 20px;
     color: #fff;
-}
-.sidebar ul li .bx-search-alt{
+    }
+    .sidebar ul li .bx-search-alt{
     position: absolute;
     z-index: 99;
     color: #fff;
     font-size: 22px;
-}
-
+    }
+    
 .sidebar ul li a{
     color: #fff;
     display: flex;
@@ -100,19 +138,36 @@ body{
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: 10px;
-}
-
+    }
+    
 .sidebar ul li a:hover{
     color: #11101d;
     background: #fff;
-}
-
-
+    }
+    
 .sidebar ul li i{
     height: 50px;
     min-width: 50px;
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
-}
+    }
+    
+.dashboard_content{
+    position: absolute;
+    height: 100%;
+    width: calc(100%-230px);
+    left: 78px;
+    }
+    
+.dashboard_content .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin: 13px;
+    }
 
+.sidebar.active ~ .dashboard_content{
+    width: calc(100% - 230px);
+    left: 240px;
+    }
