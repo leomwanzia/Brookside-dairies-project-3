@@ -9,3 +9,4 @@ let searchBtn = document.querySelector(".bx-search-alt");
     searchBtn.onclick = function(){
         sidebar.classList.toggle("active");
     }
+
