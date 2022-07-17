@@ -25,7 +25,6 @@ body{
 
 }
 
-
 .sidebar{
     position: fixed;
     top: 0;
@@ -103,7 +102,7 @@ body{
     pointer-events: none;
     }
     
-    sidebar ul li:hover .tool{
+    .sidebar ul li:hover .tool{
     transition: all 0.5s ease;
     opacity: 1;
     top: 50%;
