@@ -16,51 +16,53 @@ body{
     width: 100%;
     overflow: hidden;
 }
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+
+}
+
 
 .sidebar{
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 78px;
+    width: 240px;
     background: #11101d;
     padding: 7px 15px;
     transition: all 0.5s ease;
-}
-
-.sidebar .active{
-    width: 240px;
-}
-
-.sidebar .content .logo{
+    }
+    
+    .sidebar .content .logo{
     color : #fff;
     display: flex;
     height: 70px;
     width: 100%;
     align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s ease;
-}
+    }
     
-.sidebar .active .content .logo{
+    .sidebar .active .content .logo{
     opacity: 1;
- }
+    }
     
-.content .logo i{
+    .content .logo i{
     font-size: 30px;
     margin-right: 6px;
-}
+    }
     
-.content .logo .logo-name{
+    .content .logo .logo-name{
     font-size: 25px;
     font-weight: 500;
-}
+    }
     
-.sidebar #btn{
+    .sidebar #btn{
     color: #fff;
     position: absolute;
-    left: 50%;
+    left: 90%;
     top: 7px;
     font-size: 30px;
     height: 55px;
@@ -68,17 +70,13 @@ body{
     width: 55px;
     line-height: 55px;
     transform: translateX(-55%);
-}
-
-.sidebar .active #btn{
-    left: 90%; 
-}
+    }
     
-.sidebar ul{
+    .sidebar ul{
     margin-top: 20px;
-}
+    }
     
-.sidebar ul li{
+    .sidebar ul li{
     list-style: none;
     height: 52px;
     width: 100%;
@@ -86,13 +84,13 @@ body{
     position: relative;
     line-height: 52px;
     border-radius: 10px;
-}
+    }
     
-.sidebar ul li .tool{
+    .sidebar ul li .tool{
     position: absolute;
     left: 122px;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     border-radius: 6px;
     height: 35px;
     width: 122px;
@@ -103,17 +101,16 @@ body{
     transition: 0s;
     opacity: 0;
     pointer-events: none;
-    display: block;
-}
+    }
     
-.sidebar .active ul li:hover .tool{
-    display: block;
+    sidebar ul li:hover .tool{
     transition: all 0.5s ease;
     opacity: 1;
     top: 50%;
-}
     
-.sidebar ul li input{
+    }
+    
+    .sidebar ul li input{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -126,70 +123,46 @@ body{
     padding-left: 50px;
     font-size: 20px;
     color: #fff;
-}
+    }
     .sidebar ul li .bx-search-alt{
     position: absolute;
     z-index: 99;
     color: #fff;
     font-size: 22px;
-    transition: all 0.5s ease;
-}
-
-.sidebar ul li .bx-search-alt:hover{
-    background: #fff;
-    color: #1d1b31;
-}
+    }
     
-.sidebar ul li a{
+    .sidebar ul li a{
     color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: 10px;
-    white-space: nowrap;
-}
+    }
     
-.sidebar ul li a:hover{
+    .sidebar ul li a:hover{
     color: #11101d;
     background: #fff;
-}
+    }
     
-.sidebar ul li i{
+    .sidebar ul li i{
     height: 50px;
     min-width: 50px;
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
-}
-
-.sidebar .links_name{
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s ease;
-}
-
-.sidebar.active.links_name{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.dashboard_content{
+    }
+    
+    .dashboard_content{
     position: absolute;
     height: 100%;
-    width: calc(100% - 78px);
-    left: 78px;
-    transition: all 0.5s ease;
- }
+    width: calc(100% - 230px);
+    left: 240px;
+    }
     
-.dashboard_content.text{
+    .dashboard_content .text{
     font-size: 25px;
     font-weight: 500;
     color: #1d1b31;
     margin: 13px;
-    }
-
-.sidebar .active ~ .dashboard_content{
-    width: calc(100% - 230px);
-    left: 240px;
     }
