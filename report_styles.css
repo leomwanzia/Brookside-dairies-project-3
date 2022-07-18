@@ -1,0 +1,25 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat" , sans-serif;
+}
+
+#piechart{
+    font-weight: 900;
+    margin-left: 10%;
+    background:  rgb(241, 184, 127);
+}
+
+body{
+    background: rgb(241, 184, 127);
+}
+
+.pie{
+    background: black;
+}
