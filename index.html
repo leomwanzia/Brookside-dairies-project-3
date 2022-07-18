@@ -79,10 +79,23 @@
 </div>
 
     <div><canvas id="myChart"></canvas></div>
-
-    <script src="./index.js"></script>
-
     <script src="./my_charts.js"></script>
+    <script>
+        let btn = document.querySelector("#btn");
+let sidebar = document.querySelector(".sidebar");
+let searchBtn = document.querySelector(".bx-search-alt");
+
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+
+    searchBtn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+
+    </script>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
 
