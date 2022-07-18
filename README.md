@@ -1,7 +1,6 @@
 # Brookside-dairies-project-3
 This is an admin website that the Dairy farm owner can use to keep track of his milk produce and also use it for getting reports.
-
-PORTFOLIO BY LEO MWANZIA
+ PORTFOLIO BY LEO MWANZIA
 
 
 DESCRIPTION
