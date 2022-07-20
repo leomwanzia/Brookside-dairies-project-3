@@ -14,12 +14,22 @@
     font-weight: 900;
     margin-left: 10%;
     background:  rgb(241, 184, 127);
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    padding-top: 0px;
+    font-weight: 800;
+    font-size: xx-large;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: rgb(235, 216, 191);
+    border-radius: 4.5px;
+    border: 8%;
+    box-shadow: 10px 10px 10px rgb(153, 138, 87);
 }
 
 body{
     background: rgb(241, 184, 127);
 }
 
-.pie{
-    background: black;
-}

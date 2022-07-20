@@ -42,5 +42,30 @@
       }
     </script>
 </section>
+
+<script >
+    var materialOptions = {
+        chart: {
+        title: 'Average Temperatures and Daylight in Iceland Throughout the Year'
+        },
+        width: 900,
+        height: 500,
+        series: {
+        // Gives each series an axis name that matches the Y-axis below.
+        0: {axis: 'Temps'},
+        1: {axis: 'Daylight'}
+        },
+        axes: {
+        // Adds labels to each axis; they don't have to match the axis names.
+        y: {
+            Temps: {label: 'Temps (Celsius)'},
+            Daylight: {label: 'Daylight'}
+        }
+        }
+    };
+  </script>
+    
+<script src="my_charts.js"></script>
+
 </body>
 </html>
